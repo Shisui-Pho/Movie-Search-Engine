@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Movie_Search_Engine
 {
@@ -13,5 +7,11 @@ namespace Movie_Search_Engine
     /// </summary>
     public partial class App : Application
     {
-    }
-}
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            //Get the API key from the command line
+            CfrmMain window = new CfrmMain(e.Args[0]);
+            window.Show();
+        }//Application_Startup
+    }//class
+}//namespace

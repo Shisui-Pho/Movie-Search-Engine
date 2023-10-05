@@ -11,8 +11,8 @@ namespace Movie_Search_Engine
         {
              
             //Get the API key from the command line
-            CfrmMain window = new CfrmMain(e.Args[0], (Style)Resources["movieDiscriptionTextBlock"]);
-            window.Show();
+            Dashboard dash = new Dashboard(e.Args[0], (Style)Resources["movieDiscriptionTextBlock"]);
+            dash.Show();
         }//Application_Startup
 
         private void Image_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)

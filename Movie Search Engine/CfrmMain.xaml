@@ -5,13 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Movie_Search_Engine"
         mc:Ignorable="d"
-        Title="Movie Serach Engine" Height="500" Width="760"
-        ResizeMode="NoResize"
-        Loaded="Window_Loaded"
-        Background="AliceBlue"
-        >
+        Title="CfrmMain" Height="450" Width="800">
     <Grid>
-
-            
+        
     </Grid>
 </Window>

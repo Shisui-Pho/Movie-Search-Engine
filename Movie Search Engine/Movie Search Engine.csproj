@@ -88,9 +88,6 @@
     <Compile Include="WebServices\WebService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CfrmMain.xaml.cs">
-      <DependentUpon>CfrmMain.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Model\CMovies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -130,12 +127,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="CfrmMain.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.jpg" />

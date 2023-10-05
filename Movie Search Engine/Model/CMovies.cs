@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿//Attribution fpt TMBI API'S : This product uses the TMDB API but is not endorsed or certified by TMDB.
+using System.Collections.Generic;
 using System.Runtime.Serialization;
-
+//git remote add origin https://github.com/Shisui-Pho/Movie-Search-Engine.git
 namespace Movie_Search_Engine.Model
 {
     [DataContract]
@@ -8,6 +9,15 @@ namespace Movie_Search_Engine.Model
     {
         [DataMember]
         private List<Movie> Search;
+        public int Count => Search.Count;
+        //Indexer
+        public Movie this[int index] => Search[index];
+
+        //Contrstuctor
+        public CMovies()
+        {
+            Search = new List<Movie>();
+        }//CMovies
         public IEnumerator<Movie> GetEnumerator()
         {
             foreach (Movie movie in Search)

@@ -11,7 +11,7 @@ namespace Movie_Search_Engine
         {
              
             //Get the API key from the command line
-            Dashboard dash = new Dashboard(e.Args[0], (Style)Resources["movieDiscriptionTextBlock"]);
+            Dashboard dash = new Dashboard(e.Args[0], Resources);
             dash.Show();
         }//Application_Startup
 
